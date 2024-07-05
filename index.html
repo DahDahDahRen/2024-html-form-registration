@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>2024 Annual Marathon</h1>
+      <p>The deadline for registration shall be on August 1, 2024.</p>
+    </header>
+
+    <form action="/marathon/register">
+      <!-- Personal information -->
+      <fieldset>
+        <legend>Participant's personal information</legend>
+
+        <div>
+          <label for="firstname">Name:</label>
+          <input type="text" name="firstname" id="firstname" required />
+        </div>
+
+        <div>
+          <label for="lastname">Lastname:</label>
+          <input type="text" name="lastname" id="lastname" required />
+        </div>
+
+        <div>
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" required />
+        </div>
+
+        <div>
+          <label for="address">Address:</label>
+          <input type="text" name="address" id="address" required />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div>
+          <label for="contact">Contact No.:</label>
+          <input type="number" name="contact" id="contact" required />
+        </div>
+
+        <div>
+          <label for="legal_status">Legal Status:</label>
+          <select name="legal_status" id="legal_status" required>
+            <option value="Choose legal status">
+              --Choose legal status ---
+            </option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="widowed">Widowed</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!-- Short question or survey -->
+      <fieldset>
+        <legend>Important question for the participants?</legend>
+
+        <div>
+          <p>Any current health issues suffer by the participants?</p>
+
+          <input type="checkbox" name="hyptertension" id="hyptertension" />
+          <label for="hypertension">Hypertension</label>
+
+          <br />
+          <input type="checkbox" name="asthma" id="" />
+          <label for="asthma">Asthma</label>
+
+          <br />
+          <input type="checkbox" name="cancer" id="cancer" />
+          <label for="cancer">Cancer</label>
+
+          <br />
+          <input
+            type="checkbox"
+            name="auto-immune-disease"
+            id="auto-immune-disease"
+          />
+          <label for="auto-immune-disease">Auto-immune disease</label>
+
+          <br />
+          <label for="other">Other health issues:</label>
+          <input type="text" name="other" id="other" />
+        </div>
+      </fieldset>
+
+      <!-- Participants preference -->
+      <fieldset>
+        <legend>Marathon and attire preference of the participant.</legend>
+
+        <div>
+          <p>What is participant's shirt size?</p>
+
+          <input type="radio" name="size" id="xs" />
+          <label for="xs">XS</label>
+
+          <input type="radio" name="size" id="s" />
+          <label for="s">S</label>
+
+          <input type="radio" name="size" id="m" />
+          <label for="m">M</label>
+
+          <input type="radio" name="size" id="l" />
+          <label for="l">L</label>
+
+          <input type="radio" name="size" id="xl" />
+          <label for="xl">XL</label>
+
+          <input type="radio" name="size" id="xxl" />
+          <label for="xxl">XXL</label>
+        </div>
+
+        <div>
+          <p>Distances</p>
+
+          <input type="radio" name="distance" id="2k" />
+          <label for="2k">2K</label>
+
+          <input type="radio" name="distance" id="5k" />
+          <label for="5k">5K</label>
+
+          <input type="radio" name="distance" id="10k" />
+          <label for="10k">10K</label>
+
+          <input type="radio" name="distance" id="20k" />
+          <label for="20k">20K</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Any additional information about the participants relevant to the
+          marathon?
+        </legend>
+
+        <label for="comment">Comments:</label>
+        <br />
+        <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
+      </fieldset>
+
+      <button type="button">Submit</button>
+    </form>
+
+    <footer>
+      <p>This page is written by Jan Joshua I. Macanip</p>
+    </footer>
+  </body>
+</html>
